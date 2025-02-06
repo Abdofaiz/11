@@ -12,8 +12,6 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 
-exit 0
-
 clear
 domain=$(cat /etc/xray/domain)
 tls="$(cat ~/log-install.txt | grep -w "Vmess TLS" | cut -d: -f2|sed 's/ //g')"
@@ -24,7 +22,7 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
 			echo ""
-			echo -e "Username ${RED}${CLIENT_NAME}${NC} Already On VPS Please Choose Another"
+			echo -e "Username ${RED}${user}${NC} Already On VPS Please Choose Another"
 			exit 1
 		fi
 	done
@@ -66,8 +64,6 @@ cat>/etc/xray/vmess-$user-nontls.json<<EOF
       "tls": "none"
 }
 EOF
-vmess_base641=$( base64 -w 0 <<< $vmess_json1)
-vmess_base642=$( base64 -w 0 <<< $vmess_json2)
 xrayv2ray1="vmess://$(base64 -w 0 /etc/xray/vmess-$user-tls.json)"
 xrayv2ray2="vmess://$(base64 -w 0 /etc/xray/vmess-$user-nontls.json)"
 rm -rf /etc/xray/vmess-$user-tls.json
