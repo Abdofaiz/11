@@ -19,29 +19,29 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting You For Ssh Vpn
-sshlink="raw.githubusercontent.com/Abdofaiz/faizs/main/ssh"
+sshlink="raw.githubusercontent.com/Abdofaiz/11/main/ssh"
 # Link Hosting You For Sstp
-# gl33chervpnn="raw.githubusercontent.com/Abdofaiz/faizs/main/sstp"
+# gl33chervpnn="raw.githubusercontent.com/Abdofaiz/11/main/sstp"
 # Link Hosting You For Ssr
-# gl33chervpnnn="raw.githubusercontent.com/Abdofaiz/faizs/main/ssr"
+# gl33chervpnnn="raw.githubusercontent.com/Abdofaiz/11/main/ssr"
 # Link Hosting You For Shadowsocks
- gl33chervpnnnn="raw.githubusercontent.com/Abdofaiz/faizs/main/shadowsocks"
+ gl33chervpnnnn="raw.githubusercontent.com/Abdofaiz/11/main/shadowsocks"
 # Link Hosting You For Wireguard
- gl33chervpnnnnn="raw.githubusercontent.com/Abdofaiz/faizs/main/wireguard"
+ gl33chervpnnnnn="raw.githubusercontent.com/Abdofaiz/11/main/wireguard"
 # Link Hosting You For Xray
-xraylink="raw.githubusercontent.com/Abdofaiz/faizs/main/xray"
+xraylink="raw.githubusercontent.com/Abdofaiz/11/main/xray"
 # Link Hosting You For Ipsec
- gl33chervpnnnnnnn="raw.githubusercontent.com/Abdofaiz/faizs/main/ipsec"
+ gl33chervpnnnnnnn="raw.githubusercontent.com/Abdofaiz/11/main/ipsec"
 # Link Hosting You For Backup
-backuplink="raw.githubusercontent.com/Abdofaiz/faizs/main/backup"
+backuplink="raw.githubusercontent.com/Abdofaiz/11/main/backup"
 # Link Hosting You For Websocket
-websocketlink="raw.githubusercontent.com/Abdofaiz/faizs/main/websocket"
+websocketlink="raw.githubusercontent.com/Abdofaiz/11/main/websocket"
 # Link Hosting You For Ohp
-ohplink="raw.githubusercontent.com/Abdofaiz/faizs/main/ohp"
+ohplink="raw.githubusercontent.com/Abdofaiz/11/main/ohp"
 # link Hosting update
-updatelink="raw.githubusercontent.com/Abdofaiz/faizs/main/update"
+updatelink="raw.githubusercontent.com/Abdofaiz/11/main/update"
 # link Hosting sslh-fix
-sslhlink="raw.githubusercontent.com/Abdofaiz/faizs/main/sslh-fix"
+sslhlink="raw.githubusercontent.com/Abdofaiz/11/main/sslh-fix"
 
 
 if [ -f "/etc/xray/domain" ]; then
