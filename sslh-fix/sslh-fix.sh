@@ -20,7 +20,7 @@ rm -r sslh-fix-reboot
 rm -rf sslh-fix-reboot
 rm sslh-fix-reboot
 # Download File
-wget -O sslh-fix-reboot "https://raw.githubusercontent.com/Abdofaiz/faizs/main/sslh-fix/sslh-fix-reboot.sh"
+wget -O sslh-fix-reboot "https://raw.githubusercontent.com/Abdofaiz/11/main/sslh-fix/sslh-fix-reboot.sh"
 #change Permission
 chmod +x sslh-fix-reboot
 # change directory
