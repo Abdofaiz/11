@@ -12,26 +12,24 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 
-
-fi
 clear
 source /var/lib/Abdofaizvpn/ipvps.conf
 if [[ "$IP" = "" ]]; then
-domain=$(cat /etc/xray/domain)
+    domain=$(cat /etc/xray/domain)
 else
-domain=$IP
+    domain=$IP
 fi
 tr="$(cat ~/log-install.txt | grep -w "Trojan" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-		read -rp "Password : " -e user
-		user_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
+    read -rp "Password : " -e user
+    user_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 
-		if [[ ${user_EXISTS} == '1' ]]; then
-			echo ""
-			echo -e "Username ${RED}${user}${NC} Already On VPS Please Choose Another"
-			exit 1
-		fi
-	done
+    if [[ ${user_EXISTS} == '1' ]]; then
+        echo ""
+        echo -e "Username ${RED}${user}${NC} Already On VPS Please Choose Another"
+        exit 1
+    fi
+done
 read -p "Expired (Days) : " masaaktif
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`

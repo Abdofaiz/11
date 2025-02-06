@@ -13,8 +13,6 @@ LIGHT='\033[0;37m'
 # ==========================================
 #Getting
 
-
-fi
 clear
 source /var/lib/Abdofaizvpn/ipvps.conf
 if [[ "$IP" = "" ]]; then

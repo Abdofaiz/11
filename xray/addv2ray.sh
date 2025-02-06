@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # Getting
 
 exit 0
-fi
+
 clear
 domain=$(cat /etc/xray/domain)
 tls="$(cat ~/log-install.txt | grep -w "Vmess TLS" | cut -d: -f2|sed 's/ //g')"
